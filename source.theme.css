@@ -1,0 +1,81 @@
+//META{"name":"cookiedragon234","description":"cookiedragon234s theme","author":"cookiedragon234","version":"1.0"}*//{}
+
+/*
+Cant do this cause react, probably need to implement this into a plugin
+.member-3-YXUe {
+	padding: 0px !important;
+}
+
+.membersGroup-v9BXpm {
+	padding-top: 10px !important;
+	height: 26px !important;
+}*/
+
+/* --------- Left Server Bar ------- */
+.container-PNkimc {
+	background-color: #303235 !important;
+}
+
+/* --------- Channel Bar -------- */
+
+.container-1r6BKw {
+	background-color: #303235 !important;
+}
+
+.theme-dark .children-19S4PO:after {
+	background: none !important;
+}
+
+/* --------- Member List -------- */
+
+.messages-3amgkR, .members-1998pB, .form-2fGMdU, #MemberCount {
+	background-color: rgba(39, 41, 45, 255) !important;
+}
+
+/* --------- Messages -------- */
+
+.message-2qnXI6 {
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+
+.contents-2mQqc9 {
+	margin-left: 0 !important;
+	padding-left: 0 !important;
+	display: grid !important;
+	grid-template-columns: 150px calc(100% - 150px) !important;
+}
+
+.header-23xsNx {
+	display: inline-grid !important;
+	grid-template-columns: min-content 1fr !important;
+	margin-left: 4px !important;
+	float: right !important;
+	text-align: right !important;
+	width: 150px !important;
+}
+
+.timestamp-3ZCmNB {
+	width: 25px !important;
+}
+
+.timestamp-3ZCmNB > span {
+	float: left !important;
+}
+
+.username-1A8OIy {
+	float: right !important;
+	text-align: right !important;
+	width: 100% !important;
+	margin-left: -9px !important;
+	white-space: nowrap !important;
+	overflow: hidden !important;
+}
+
+.botTagCompact-29bCci {
+	display: none !important;
+}
+
+.container-1ov-mD {
+	margin-left: 150px !important;
+}
