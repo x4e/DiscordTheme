@@ -39,7 +39,11 @@ Cant do this cause react, probably need to implement this into a plugin
 }
 
 .theme-dark .form-2fGMdU:before {
-	display: none;
+	display: none !important;
+}
+
+.channelTextArea-rNsIhG.channelTextAreaDisabled-8rmlrp {
+	display: none !important;
 }
 
 /* --------- Messages -------- */
