@@ -13,13 +13,13 @@ Cant do this cause react, probably need to implement this into a plugin
 
 /* --------- Left Server Bar ------- */
 .container-PNkimc {
-	background-color: #303235 !important;
+	background-color: #2b2e31 !important;
 }
 
 /* --------- Channel Bar -------- */
 
 .container-1r6BKw {
-	background-color: #303235 !important;
+	background-color: #2b2e31 !important;
 }
 
 .theme-dark .children-19S4PO:after {
@@ -29,7 +29,7 @@ Cant do this cause react, probably need to implement this into a plugin
 /* --------- Member List -------- */
 
 .members-1998pB, #MemberCount {
-	background-color: #303235 !important;
+	background-color: #2b2e31 !important;
 }
 
 /* --------- Message form -------- */
