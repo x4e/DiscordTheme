@@ -28,11 +28,25 @@ Cant do this cause react, probably need to implement this into a plugin
 
 /* --------- Member List -------- */
 
-.messages-3amgkR, .members-1998pB, .form-2fGMdU, #MemberCount {
+.members-1998pB, #MemberCount {
 	background-color: rgba(39, 41, 45, 255) !important;
 }
 
+/* --------- Message form -------- */
+
+.form-2fGMdU {
+	background-color: rgba(39, 41, 45, 255) !important;
+}
+
+.theme-dark .form-2fGMdU:before {
+	display: none;
+}
+
 /* --------- Messages -------- */
+
+.messages-3amgkR {
+	background-color: rgba(39, 41, 45, 255) !important;
+}
 
 .message-2qnXI6 {
 	padding-left: 0 !important;
