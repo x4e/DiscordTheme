@@ -39,6 +39,7 @@ Cant do this cause react, probably need to implement this into a plugin
 	padding-right: 0 !important;
 }
 
+/* Contains header and message, grid with 150px for header, and rest for message */
 .contents-2mQqc9 {
 	margin-left: 0 !important;
 	padding-left: 0 !important;
@@ -46,6 +47,7 @@ Cant do this cause react, probably need to implement this into a plugin
 	grid-template-columns: 150px calc(100% - 150px) !important;
 }
 
+/* Header is used to contain timestamp and username */
 .header-23xsNx {
 	display: inline-grid !important;
 	grid-template-columns: min-content 1fr !important;
@@ -55,14 +57,15 @@ Cant do this cause react, probably need to implement this into a plugin
 	width: 150px !important;
 }
 
+/* Timestamps, float them left and cap width */
 .timestamp-3ZCmNB {
 	width: 25px !important;
 }
-
 .timestamp-3ZCmNB > span {
 	float: left !important;
 }
 
+/* Username, align it right and remove overflows */
 .username-1A8OIy {
 	float: right !important;
 	text-align: right !important;
@@ -72,10 +75,19 @@ Cant do this cause react, probably need to implement this into a plugin
 	overflow: hidden !important;
 }
 
+/* Remove bot tag as it fucks with grid */
 .botTagCompact-29bCci {
 	display: none !important;
 }
 
 .container-1ov-mD {
 	margin-left: 150px !important;
+}
+
+/* Join Messages */
+.container-3-pyIM {
+	position: absolute !important;
+	margin-right: -150px !important;
+	margin-left: 0 !important;
+	padding-left: 10px !important;
 }
