@@ -11,6 +11,12 @@ Cant do this cause react, probably need to implement this into a plugin
 	height: 26px !important;
 }*/
 
+/* --------- Upload Panel ------- */
+
+.uploadModal-2ifh8j, .da-uploadModal, .footer-3mqk7D, .da-footer {
+	background-color: #2b2e31 !important;
+}
+
 /* --------- Left Server Bar ------- */
 .container-PNkimc, .privateChannels-1nO12o {
 	background-color: #2b2e31 !important;
