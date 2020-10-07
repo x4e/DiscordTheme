@@ -12,7 +12,11 @@ Cant do this cause react, probably need to implement this into a plugin
 }*/
 
 /* --------- Left Server Bar ------- */
-.container-PNkimc {
+.container-PNkimc, .privateChannels-1nO12o {
+	background-color: #2b2e31 !important;
+}
+
+.sidebar-2K8pFh > .panels-j1Uci_ {
 	background-color: #2b2e31 !important;
 }
 
@@ -28,11 +32,15 @@ Cant do this cause react, probably need to implement this into a plugin
 
 /* --------- Member List -------- */
 
-.members-1998pB, #MemberCount {
+.members-1998pB, #MemberCount, .membersGroup-v9BXpm, .da-membersGroup, .member-3-YXUe, .da-member {
 	background-color: #2b2e31 !important;
 }
 
 /* --------- Message form -------- */
+
+.scrollableContainer-2NUZem.webkit-HjD9Er.da-webkit {
+	background-color: #35393c !important;
+}
 
 .form-2fGMdU {
 	background-color: rgba(39, 41, 45, 255) !important;
@@ -47,6 +55,10 @@ Cant do this cause react, probably need to implement this into a plugin
 }
 
 /* --------- Messages -------- */
+
+.scrollerInner-2YIMLh {
+	background-color: rgba(39, 41, 45, 255) !important;
+}
 
 .messages-3amgkR {
 	background-color: rgba(39, 41, 45, 255) !important;
@@ -91,6 +103,7 @@ Cant do this cause react, probably need to implement this into a plugin
 	margin-left: -9px !important;
 	white-space: nowrap !important;
 	overflow: hidden !important;
+	margin-right: 5px !important;
 }
 
 /* Remove bot tag as it fucks with grid */
