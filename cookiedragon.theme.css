@@ -18,7 +18,7 @@ Cant do this cause react, probably need to implement this into a plugin
 }
 
 /* --------- Left Server Bar ------- */
-.container-PNkimc, .privateChannels-1nO12o {
+.container-3w7J-x, .privateChannels-1nO12o {
 	background-color: #2b2e31 !important;
 }
 
@@ -44,8 +44,12 @@ Cant do this cause react, probably need to implement this into a plugin
 
 /* --------- Message form -------- */
 
-.scrollableContainer-2NUZem.webkit-HjD9Er.da-webkit {
-	background-color: #35393c !important;
+.container-2fRDfG { /* Reply info box */
+	background-color: #2e3133 !important;
+}
+
+.scrollableContainer-2NUZem {
+	background-color: #2e3133 !important;
 }
 
 .form-2fGMdU {
@@ -70,66 +74,72 @@ Cant do this cause react, probably need to implement this into a plugin
 	background-color: rgba(39, 41, 45, 255) !important;
 }
 
-.message-2qnXI6 {
+
+/* Dont show username for consecutive messages */
+.da-timestampVisibleOnHover ~ .da-headerText {
+	opacity: 0 !important;
+}
+
+.da-message {
 	padding-left: 0 !important;
 	padding-right: 0 !important;
 }
 
-/* Contains header and message, grid with 150px for header, and rest for message */
-.contents-2mQqc9 {
+
+.da-message > .da-repliedMessage {
 	margin-left: 0 !important;
 	padding-left: 0 !important;
+	text-indent: 0 !important;
+	
 	display: grid !important;
-	grid-template-columns: 150px calc(100% - 150px) !important;
+	grid-template-columns: 120px min-content min-content !important;
 }
 
-/* Header is used to contain timestamp and username */
-.header-23xsNx {
-	display: inline-grid !important;
-	grid-template-columns: min-content 1fr !important;
-	margin-left: 4px !important;
-	float: right !important;
-	text-align: right !important;
-	width: 150px !important;
+.da-message > .da-repliedMessage > .da-replyBadge {
+    width: 100% !important;
+    background-color: rgba(0,0,0,0) !important;
 }
 
-/* Timestamps, float them left and cap width */
-.timestamp-3ZCmNB {
-	width: 25px !important;
+.da-message > .da-repliedMessage > .da-replyBadge > .da-replyIcon { 
+	margin-left: auto !important;
+	margin-right: 5px !important;
 }
-.timestamp-3ZCmNB > span {
-	float: left !important;
+
+.da-message > .da-repliedMessage > .da-username { 
+	margin: 0 0 0 0 !important;
+	margin-right: 5px !important;
+}
+
+.da-message > .da-contents {
+	margin-left: 0 !important;
+	padding-left: 0 !important;
+	text-indent: 0 !important;
+	
+	display: grid !important;
+	grid-template-columns: 120px calc(100% - 120px) !important;
+}
+
+.da-message > .da-contents > .da-header {
+	width: 120px !important;
+	
+	display: grid !important;
+	grid-template-columns: min-content min-content !important;
 }
 
 /* Username, align it right and remove overflows */
-.username-1A8OIy {
+.da-username {
 	float: right !important;
 	text-align: right !important;
-	width: 100% !important;
 	margin-left: -9px !important;
 	white-space: nowrap !important;
 	overflow: hidden !important;
 	margin-right: 5px !important;
 }
 
-/* Remove bot tag as it fucks with grid */
-.botTagCompact-29bCci {
-	display: none !important;
+.da-headerText {
+	width: calc(120px - 40px) !important; 	
 }
 
-.container-1ov-mD {
-	margin-left: 150px !important;
-}
-
-/* Join Messages */
-.container-3-pyIM {
-	position: absolute !important;
-	margin-right: -150px !important;
-	margin-left: 0 !important;
-	padding-left: 10px !important;
-}
-
-/* Dont show username for consecutive messages */
-.timestampVisibleOnHover-2bQeI4 ~ .username-1A8OIy {
-	opacity: 0 !important;
+.da-message > .da-container {
+	padding-left: 120px;
 }
