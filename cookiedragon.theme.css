@@ -127,7 +127,7 @@ Cant do this cause react, probably need to implement this into a plugin
 }
 
 /* Username, align it right and remove overflows */
-.da-username {
+.da-header > .da-headerText > .da-username {
 	float: right !important;
 	text-align: right !important;
 	margin-left: -9px !important;
@@ -136,8 +136,9 @@ Cant do this cause react, probably need to implement this into a plugin
 	margin-right: 5px !important;
 }
 
-.da-headerText {
-	width: calc(120px - 40px) !important; 	
+.da-header > .da-headerText {
+	width: calc(120px - 40px) !important;
+	overflow: hidden !important;
 }
 
 .da-message > .da-container {
